@@ -6,79 +6,40 @@ import warning from "../assets/warning.svg";
 import cancel from "../assets/cancel.svg";
 import greencheck from "../assets/checkgreen.svg";
 
-const FullStack = Loadable({
-  loader: () => import(/* webpackChunkName: "FullStack" */  "./svgComponents/FullStack"),
-  loading:() => <div/>
-});
-const MasterDetail = Loadable({
-  loader: () => import(/* webpackChunkName: "MasterDetail" */  "./svgComponents/MasterDetail"),
-  loading:() => <div/>
-});
-const BlankPage = Loadable({
-  loader: () => import(/* webpackChunkName: "BlankPage" */  "./svgComponents/BlankPage"),
-  loading:() => <div/>
-});
-const ContentGrid = Loadable({
-  loader: () => import(/* webpackChunkName: "ContentGrid" */  "./svgComponents/ContentGrid"),
-  loading:() => <div/>
-});
-const Masterdetailscreenshot = Loadable({
-  loader: () => import(/* webpackChunkName: "Masterdetailscreenshot" */  "./svgComponents/Masterdetailscreenshot"),
-  loading:() => <div/>
-});
-const Listscreenshot = Loadable({
-  loader: () => import(/* webpackChunkName: "Listscreenshot" */  "./svgComponents/Listscreenshot"),
-  loading:() => <div/>
-});
-const Gridscreenshot = Loadable({
-  loader: () => import(/* webpackChunkName: "Gridscreenshot" */  "./svgComponents/Gridscreenshot"),
-  loading:() => <div/>
-});
-const Blankscreenshot = Loadable({
-  loader: () => import(/* webpackChunkName: "Blankscreenshot" */  "./svgComponents/Blankscreenshot"),
-  loading:() => <div/>
-});
-const List = Loadable({
-  loader: () => import(/* webpackChunkName: "List" */  "./svgComponents/List"),
-  loading:() => <div/>
-});
+import FullStack from "./svgComponents/FullStack";
+import MasterDetail from  "./svgComponents/MasterDetail";
+import BlankPage from "./svgComponents/BlankPage";
+
+import ContentGrid from  "./svgComponents/ContentGrid";
+
+import Masterdetailscreenshot from  "./svgComponents/Masterdetailscreenshot";
+
+import Listscreenshot from "./svgComponents/Listscreenshot";
+
+import Gridscreenshot from "./svgComponents/Gridscreenshot";
+ 
+import Blankscreenshot from "./svgComponents/Blankscreenshot";
+ 
+import List from "./svgComponents/List";
+  
 //icons
-const ReactIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "ReactIcon" */  "./svgComponents/ReactIcon"),
-  loading:() => <div/>
-});
-const AngularIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "AngularIcon" */  "./svgComponents/AngularIcon"),
-  loading:() => <div/>
-});
-const VueIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "VueIcon" */  "./svgComponents/VueIcon"),
-  loading:() => <div/>
-});
-const NodeIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "NodeIcon" */  "./svgComponents/NodeIcon"),
-  loading:() => <div/>
-});
-const FlaskIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "FlaskIcon" */  "./svgComponents/FlaskIcon"),
-  loading:() => <div/>
-});
-const MoleculerIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "MoleculerIcon" */  "./svgComponents/MoleculerIcon"),
-  loading:() => <div/>
-});
-const AzureIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "AzureIcon" */  "./svgComponents/AzureIcon"),
-  loading:() => <div/>
-});
-const AppserviceIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "AppServiceIcon" */  "./svgComponents/AppserviceIcon"),
-  loading:() => <div/>
-});
-const CosmosdbIcon = Loadable({
-  loader: () => import(/* webpackChunkName: "CosmosdbIcon" */  "./svgComponents/CosmosdbIcon"),
-  loading:() => <div/>
-});
+import ReactIcon from "./svgComponents/ReactIcon";
+  
+import AngularIcon from "./svgComponents/AngularIcon";
+ 
+import VueIcon from "./svgComponents/VueIcon";
+  
+import NodeIcon from "./svgComponents/NodeIcon";
+  
+import FlaskIcon from "./svgComponents/FlaskIcon";
+  
+import MoleculerIcon from "./svgComponents/MoleculerIcon";
+  
+import AzureIcon from  "./svgComponents/AzureIcon";
+  
+import AppserviceIcon from "./svgComponents/AppserviceIcon";
+  
+import CosmosdbIcon from  "./svgComponents/CosmosdbIcon";
 
 const SVG_MAPPINGS = {
   [WIZARD_CONTENT_INTERNAL_NAMES.REACT]: (style: string) => (

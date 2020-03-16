@@ -9,6 +9,3 @@ config.optimization.splitChunks = {
 };
 
 config.optimization.runtimeChunk = false;
-
-config.output = config.output || {};
-config.output.publicPath= "";

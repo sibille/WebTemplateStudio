@@ -127,6 +127,9 @@ export class ReactPanel {
     );
     const styleUri = stylePathOnDisk.with({ scheme: "vscode-resource" });
 
+    // Use a nonce to whitelist which scripts can be run
+		const nonce = getNonce();
+
     return `<!DOCTYPE html>
 			<html lang="en">
 			<head>
@@ -135,7 +138,7 @@ export class ReactPanel {
 				<meta name="theme-color" content="#000000">
 				<title>Web Template Studio</title>
 				<link rel="stylesheet" type="text/css" href="${styleUri}">
-				<meta img-src vscode-resource: https: ;style-src vscode-resource: 'unsafe-inline' http: https: data:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src vscode-resource: https:; script-src 'nonce-${nonce}';style-src vscode-resource: 'unsafe-inline' http: https: data:;">
 				<base href="${vscode.Uri.file(path.join(this._extensionPath, "react")).with({
           scheme: "vscode-resource"
         })}/">
@@ -143,8 +146,17 @@ export class ReactPanel {
 			<body>
 				<noscript>You need to enable JavaScript to run this app.</noscript>
 				<div id="root"></div>
-        <script src="${scriptUri}"></script>
+        <script nonce="${nonce}" src="${scriptUri}"></script>
 			</body>
 			</html>`;
   }
+}
+
+function getNonce() {
+	let text = "";
+	const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	for (let i = 0; i < 32; i++) {
+		text += possible.charAt(Math.floor(Math.random() * possible.length));
+	}
+	return text;
 }
