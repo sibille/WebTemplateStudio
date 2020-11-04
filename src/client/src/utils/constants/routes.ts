@@ -35,10 +35,9 @@ const messages = defineMessages({
 
 const NavItemsWeb: IRoutesNavItems[] = [
   {route:ROUTE.NEW_PROJECT, isSelected:true, wasVisited: true, index:0, messageDescriptor: messages.welcome},
-  {route:ROUTE.SELECT_FRAMEWORKS, isSelected:false, wasVisited: false, index:1, messageDescriptor:messages.frameworks},
-  {route:ROUTE.ADD_PAGES, isSelected:false, wasVisited: false, index:2, messageDescriptor:messages.pages},
-  {route:ROUTE.ADD_SERVICES, isSelected:false, wasVisited: false, index:3, messageDescriptor:messages.services},
-  {route:ROUTE.REVIEW_AND_GENERATE, isSelected:false, wasVisited: false, index:4, messageDescriptor:messages.summary},
+  {route:ROUTE.ADD_PAGES, isSelected:false, wasVisited: false, index:1, messageDescriptor:messages.pages},
+  {route:ROUTE.ADD_SERVICES, isSelected:false, wasVisited: false, index:2, messageDescriptor:messages.services},
+  {route:ROUTE.REVIEW_AND_GENERATE, isSelected:false, wasVisited: false, index:3, messageDescriptor:messages.summary},
 ];
 
 export {

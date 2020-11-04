@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.commands.registerCommand(
       "webTemplateStudioExtension.wizardLaunch.local",
       async () => {
-        Controller.getInstance(context, Platform.Web);
+        Controller.getInstance(context, Platform.ReactNative);
       }
     ),
     vscode.commands.registerCommand(

@@ -1,0 +1,1 @@
+﻿React Native project wts.projectName created

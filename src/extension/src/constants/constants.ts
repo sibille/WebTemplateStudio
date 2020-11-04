@@ -95,7 +95,8 @@ export enum AzureResourceType {
 }
 
 export enum Platform {
-  Web = "Web"
+  Web = "Web",
+  ReactNative = "RN"
 }
 
 export enum OS {
