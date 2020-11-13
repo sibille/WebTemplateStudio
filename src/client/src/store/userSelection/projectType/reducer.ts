@@ -1,7 +1,9 @@
 import { USERSELECTION_TYPEKEYS } from "../typeKeys";
 import WizardSelectionActionType from "../selectionActionType";
+import { WIZARD_PROJECT_TYPE } from "../../../utils/constants/internalNames";
 
-const initialState = "Tabbed";
+//TODO Could this come from the command chosen to open the app? And.. once only?
+const initialState = WIZARD_PROJECT_TYPE.RN_TABBED_APP;
 
 const backendFramework = (
   state: string = initialState,
