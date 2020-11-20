@@ -1,1 +1,1 @@
-﻿React Native project wts.projectName created
+﻿*** REACT NATIVE *** project wts.projectName created

@@ -1,13 +1,14 @@
 const WIZARD_PROJECT_TYPE = {
   FULL_STACK_APP: "FullStackWebApp",
   RN_TABBED_APP: "Tabbed",
-  RN_DRAWER_APP: "Drawer",  
+  RN_DRAWER_APP: "Drawer",
 }
 
 const FRONTEND_FRAMEWORKS = {
   REACT: "React",
   ANGULAR: "Angular",
   VUE: "Vue",
+  RN: "ReactNative",
 }
 
 const BACKEND_FRAMEWORKS = {
