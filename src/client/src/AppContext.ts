@@ -13,6 +13,6 @@ interface IAppContext {
 //TODO: Web Template Studio: Create Web App
 //TODO: Web Template Studio: Create React Native App
 const devPlatform = PLATFORM.RN;
-export const platform = (process.env.NODE_ENV === DEVELOPMENT) ? devPlatform : PLATFORM.WEB;
+export const platform = (process.env.NODE_ENV === DEVELOPMENT) ? devPlatform : PLATFORM.RN;
 
 export const AppContext = React.createContext<IAppContext>({vscode:mockVsCodeApi(platform) as IVSCodeObject});

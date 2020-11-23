@@ -214,7 +214,8 @@ export class CoreTemplateStudio {
       frontendFramework: frontendFramework,
       backendFramework: backendFramework,
       language: "Any",
-      platform: "Web",
+      //TODO: depends on launch command
+      platform: "ReactNative", //Web
       homeName: "Test",
       pages: pages.map((page: any) => ({
         name: page.name,
